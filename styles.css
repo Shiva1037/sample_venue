@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .hero-section {
-  background-image: url('https://images.pexels.com/photos/1707446/pexels-photo-1707446.jpeg?_gl=1*8vt3gr*_ga*MTcyNDc2ODEwMC4xNzUzNzc1NDMx*_ga_8JE65Q40S6*czE3NTQ0NzE5NzckbzUkZzEkdDE3NTQ0NzI0MzkkajQyJGwwJGgw');
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,7 +279,7 @@ footer a:hover {
 } 
 
 body {
-  background: url('https://images.pexels.com/photos/3023279/pexels-photo-3023279.jpeg?_gl=1*1pz4j9p*_ga*MTcyNDc2ODEwMC4xNzUzNzc1NDMx*_ga_8JE65Q40S6*czE3NTQ0NzE5NzckbzUkZzEkdDE3NTQ0NzI2ODQkajIwJGwwJGgw') no-repeat center center fixed;
+  background: url('https://images.pexels.com/photos/1707446/pexels-photo-1707446.jpeg?_gl=1*8vt3gr*_ga*MTcyNDc2ODEwMC4xNzUzNzc1NDMx*_ga_8JE65Q40S6*czE3NTQ0NzE5NzckbzUkZzEkdDE3NTQ0NzI0MzkkajQyJGwwJGgw') no-repeat center center fixed;
   background-size: cover;
 }
 
