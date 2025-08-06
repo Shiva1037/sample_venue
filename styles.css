@@ -29,19 +29,27 @@
 .feature-box {
     padding: 30px 20px;
     text-align: center;
-    background: #82a4d9;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06); /* Subtle glass background */
+    border-radius: 14px;
     height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Less strong border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    color: #e0e0e0; /* Slightly darker text for readability */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18); /* Slight pop on hover */
 }
 
+
+
+
 .feature-box h3 {
-    color: #333;
+    color: #e3f2fd;
     margin-bottom: 15px;
     font-weight: 600;
 }
