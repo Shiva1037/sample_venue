@@ -56,15 +56,20 @@
 
 /* Venue Cards */
 .venue-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    background-color:  #f8f9; /* Light modern gray */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    overflow: hidden;
+    
 }
 
 .venue-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
+
 
 .venue-card .card-img-top {
     height: 200px;
@@ -72,12 +77,12 @@
 }
 
 .venue-card .card-title {
-    color: #333;
+    color: black;
     font-weight: 600;
 }
 
 .venue-card .card-text {
-    color: #333;
+    color: black;
     font-size: 0.9rem;
 }
 
@@ -308,6 +313,7 @@ h1, h2, h3, h4, h5, h6, .lead {
 ul.list-unstyled li,
 ul.list-unstyled li strong {
     color: #ffffff;
+    
 }
 p{
     color: #3B2A22;
