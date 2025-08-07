@@ -56,35 +56,44 @@
 
 /* Venue Cards */
 .venue-card {
-    border: none;
-    border-radius: 16px;
-    background-color:  #f8f9; /* Light modern gray */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    padding: 30px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06); /* Glassmorphic effect */
+    border-radius: 14px;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    
 }
 
 .venue-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-
+/* Optional - Image styling (if applicable) */
 .venue-card .card-img-top {
     height: 200px;
     object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
 }
 
+/* Optional - Adjust text styles for glass background */
 .venue-card .card-title {
-    color: black;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .venue-card .card-text {
-    color: black;
+    color: #dddddd;
     font-size: 0.9rem;
 }
+
 
 /* Buttons */
 .btn-primary {
@@ -112,26 +121,35 @@
     box-shadow: 0 5px 15px rgba(86, 171, 47, 0.4);
 }
 
-/* Navigation */
+/* Navbar - Clean, Modern, Flat */
 .navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #ffffff; /* Light background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  padding: 0.75rem 1rem;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #333 !important;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f1f1f !important;
 }
 
-.nav-link {
-    font-weight: 500;
-    color: #555 !important;
-    transition: color 0.3s ease;
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
 }
 
-.nav-link:hover {
-    color: #667eea !important;
+.navbar-nav .nav-link:hover {
+  color: #0b57d0 !important; /* Google Blue */
 }
+
+/* Optional: Use Roboto for Google feel */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 
 /* Venue Detail Page */
 .venue-gallery img {
@@ -202,6 +220,9 @@ footer a {
 footer a:hover {
     opacity: 0.8;
 }
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -317,4 +338,16 @@ ul.list-unstyled li strong {
 }
 p{
     color: #3B2A22;
+}
+.glassy-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  color:white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;         /* Adjust as needed */
+  height: auto;          /* ✨ Ensure height is not fixed */
+  min-height: unset;     /* Optional reset */
 }

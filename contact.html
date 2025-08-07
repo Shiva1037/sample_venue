@@ -12,6 +12,64 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <style>
+  body {
+    background: url('https://images.pexels.com/photos/1707446/pexels-photo-1707446.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  label {
+    color: white !important;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .form-control::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+  }
+
+  .accordion-item {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+  }
+
+  .accordion-button {
+    background: transparent;
+    color: white;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  p{
+    color: white;
+  }
+
+  
+</style>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -83,7 +141,7 @@
           
           <div class="mb-3">
             <label for="message" class="form-label">Message *</label>
-            <textarea class="form-control" id="message" rows="5" required placeholder="Please describe your requirements, preferred venue type, budget, and any specific questions you have..."></textarea>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
           </div>
           
           <button type="submit" class="btn btn-primary">Send Message</button>
@@ -129,7 +187,7 @@
               Monday - Friday: 9:00 AM - 8:00 PM<br>
               Saturday: 10:00 AM - 6:00 PM<br>
               Sunday: 10:00 AM - 4:00 PM<br>
-              <small class="text-muted">24/7 online support available</small>
+              <small class="text-muted" style="color: white !important;">24/7 online support available</small>
             </p>
           </div>
         </div>
@@ -198,7 +256,7 @@
 
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-      <p class="mb-0">© 2025 VenueBooking. All rights reserved.</p>
+      <p class="mb-0" style="color: #ffffff !important;">© 2025 VenueBooking. All rights reserved.</p>
       <p class="mb-0"><a href="sitemap.xml" class="text-white">Sitemap</a></p>
     </div>
   </footer>
